@@ -15,7 +15,7 @@ def build_graph(path_to_csv: Union[FilePath, ReadCsvBuffer[bytes], ReadCsvBuffer
         satisfactory_recipe_digraph (nx.DiGraph): DiGraph structure containing all recipes, ingredients, and their
         relationships as a directed graph.
     """
-    satisfactory_edge_list = pd.read_csv("data/satisfactory_edge_list.csv")
+    satisfactory_edge_list = pd.read_csv(path_to_csv)
     satisfactory_recipe_digraph = nx.from_pandas_edgelist(
         satisfactory_edge_list, source="Recipe", target="Ingredient", edge_attr=True, create_using=nx.DiGraph
     )
