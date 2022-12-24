@@ -93,9 +93,14 @@ if __name__ == '__main__':
     console.print(nodes, style='indian_red')
     # TODO: Add error handling for invalid recipe inputs
     recipe = Prompt.ask("Enter one of a valid recipe from list above").title()
-    num_output = float(Prompt.ask("Input number of desired recipe to output (default=1)"))
+    num_output = Prompt.ask("Input number of desired recipe to output (default=1)")
+    try:
+        num_output = float(num_output)
+    except ValueError:
+        num_output = 1
+    args = [graph, recipe, num_output]
+    ingredients = get_ingredients(*args)
 
-    ingredients = get_ingredients(graph=graph, recipe=recipe, num_output=num_output)
     table = Table(title=Text(f"{num_output} of {recipe}", 'indian_red'), style='indian_red', show_header=False,
                   show_lines=True)
     for ingredient in ingredients:
