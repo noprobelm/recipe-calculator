@@ -8,7 +8,7 @@ from rich.columns import Columns
 from rich.console import Console
 
 
-def build_graph(path_to_csv: Union[FilePath, ReadCsvBuffer[bytes], ReadCsvBuffer[str]]):
+def build_graph(path_to_csv: Union[FilePath, ReadCsvBuffer[bytes], ReadCsvBuffer[str]]) -> nx.DiGraph:
     """Build a directed graph using a csv-formatted edge list
 
     Returns:
@@ -22,7 +22,9 @@ def build_graph(path_to_csv: Union[FilePath, ReadCsvBuffer[bytes], ReadCsvBuffer
     return satisfactory_recipe_digraph
 
 
-def get_ingredients(graph: nx.DiGraph, recipe: str, num_output: Optional[Union[int, float]] = 1):
+def get_ingredients(
+    graph: nx.DiGraph, recipe: str, num_output: Optional[Union[int, float]] = 1
+) -> dict[str, dict[str, int]]:
     """
     This algorithm works by taking a networkx digraph containing relationships between recipes and their ingredients and
     outputting the number of ingredients required to produce X of a recipe.
