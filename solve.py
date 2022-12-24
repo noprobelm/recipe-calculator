@@ -6,6 +6,7 @@ from rich.pretty import pprint, Pretty
 from rich.prompt import Prompt
 from rich.columns import Columns
 from rich.console import Console
+from rich.panel import Panel
 
 
 def build_graph(path_to_csv: Union[FilePath, ReadCsvBuffer[bytes], ReadCsvBuffer[str]]) -> nx.DiGraph:
@@ -79,8 +80,6 @@ def get_ingredients(
                 product *= sg.edges[u, v]["Ingredient Rate"]
             ingredients[ing] += product
 
-    del ingredients[recipe]
-    ingredients = {recipe: ingredients}
     return ingredients
 
 
@@ -88,12 +87,14 @@ if __name__ == '__main__':
     console = Console()
     graph = build_graph('data/satisfactory_edge_list.csv')
 
-    nodes = Columns([node for node in graph.nodes], equal=True, expand=True)
+    nodes = Panel(Columns([node for node in graph.nodes], equal=True, expand=True))
     console.print(nodes, style='indian_red')
     # TODO: Add error handling for invalid recipe inputs
     recipe = Prompt.ask("Enter one of a valid recipe from list above").title()
     num_output = float(Prompt.ask("Input number of desired recipe to output (default=1)"))
 
     ingredients = get_ingredients(graph=graph, recipe=recipe, num_output=num_output)
-    console.print(f"Ingredient list to produce {num_output} of [indian_red]{recipe}[/indian_red]:")
-    pprint(ingredients)
+    message = Panel(
+        f"Ingredients list to produce [blue]{num_output}[/blue] of [indian_red]{recipe}[/indian_red]\n{ingredients}"
+    )
+    console.print(message)
