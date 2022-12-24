@@ -2,11 +2,12 @@ import networkx as nx
 import pandas as pd
 from pandas._typing import FilePath, ReadCsvBuffer, ReadCsvBuffer
 from typing import Union, Optional
-from rich.pretty import pprint, Pretty
 from rich.prompt import Prompt
 from rich.columns import Columns
 from rich.console import Console
 from rich.panel import Panel
+from rich.table import Table
+from rich.text import Text
 
 
 def build_graph(path_to_csv: Union[FilePath, ReadCsvBuffer[bytes], ReadCsvBuffer[str]]) -> nx.DiGraph:
@@ -80,6 +81,7 @@ def get_ingredients(
                 product *= sg.edges[u, v]["Ingredient Rate"]
             ingredients[ing] += product
 
+    del ingredients[recipe]
     return ingredients
 
 
@@ -94,7 +96,8 @@ if __name__ == '__main__':
     num_output = float(Prompt.ask("Input number of desired recipe to output (default=1)"))
 
     ingredients = get_ingredients(graph=graph, recipe=recipe, num_output=num_output)
-    message = Panel(
-        f"Ingredients list to produce [blue]{num_output}[/blue] of [indian_red]{recipe}[/indian_red]\n{ingredients}"
-    )
-    console.print(message)
+    table = Table(title=Text(f"{num_output} of {recipe}", 'indian_red'), style='indian_red', show_header=False,
+                  show_lines=True)
+    for ingredient in ingredients:
+        table.add_row(ingredient, str(ingredients[ingredient]))
+    console.print(table)
