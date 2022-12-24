@@ -88,16 +88,19 @@ def get_ingredients(
 if __name__ == '__main__':
     console = Console()
     graph = build_graph('data/satisfactory_edge_list.csv')
+    nodes = [node for node in graph.nodes]
 
-    nodes = Panel(Columns([node for node in graph.nodes], equal=True, expand=True))
-    console.print(nodes, style='indian_red')
-    # TODO: Add error handling for invalid recipe inputs
-    recipe = Prompt.ask("Enter one of a valid recipe from list above").title()
+    console.print(Columns(nodes, equal=True, expand=True), style='indian_red')
+    recipe = Prompt.ask("Enter one of a valid recipe from list above")
+    if recipe.title() not in nodes:
+        raise ValueError(f"Invalid recipe '{recipe}'. Please provide a case insensitive value of a valid recipe.")
+    recipe = recipe.title()
     num_output = Prompt.ask("Input number of desired recipe to output (default=1)")
     try:
         num_output = float(num_output)
     except ValueError:
         num_output = 1
+
     args = [graph, recipe, num_output]
     ingredients = get_ingredients(*args)
 
