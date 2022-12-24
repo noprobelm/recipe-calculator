@@ -1,0 +1,288 @@
+Recipe,Building,Building Output Rate,Alternate,Alternate of,Ingredient,Ingredient Rate
+Adaptive Control Unit,Manufacturer,1.0,False,,Automated Wiring,7.5
+AI Limiter,Assembler,5.0,False,,Copper Sheet,5.0
+Alclad Aluminum Sheet,Assembler,30.0,False,,Aluminum Ingot,1.0
+Aluminum Casing,Constructor,60.0,False,,Aluminum Ingot,1.5
+Alclad Casing,Assembler,112.5,True,Aluminum Casing,Aluminum Ingot,1.3333333333333333
+Aluminum Ingot,Foundry,60.0,False,,Aluminum Scrap,1.5
+Pure Aluminum Ingot,Smelter,30.0,True,Aluminum Ingot,Aluminum Scrap,2.0
+Assembly Director System,Assembler,0.75,False,,Adaptive Control Unit,2.0
+Automated Wiring,Assembler,2.5,False,,Stator,1.0
+Automated Speed Wiring,Manufacturer,7.5,True,Automated Wiring,Stator,0.5
+Classic Battery,Manufacturer,30.0,True,Battery,Sulfur,1.5
+Black Powder,Assembler,7.5,False,,Coal,1.0
+Fine Black Powder,Assembler,15.0,True,Black Powder,Sulfur,0.5
+Cable,Constructor,30.0,False,,Wire,2.0
+Insulated Cable,Assembler,100.0,True,Cable,Wire,0.45
+Quickwire Cable,Assembler,27.5,True,Cable,Quickwire,0.2727272727272727
+Caterium Ingot,Smelter,15.0,False,,Caterium Ore,3.0
+Circuit Board,Assembler,7.5,False,,Copper Sheet,2.0
+Electrode Circuit Board,Assembler,5.0,True,Circuit Board,Rubber,6.0
+Silicon Circuit Board,Assembler,12.5,True,Circuit Board,Copper Sheet,2.2
+Caterium Circuit Board,Assembler,8.75,True,Circuit Board,Plastic,1.4285714285714286
+Computer,Manufacturer,2.5,False,,Circuit Board,10.0
+Crystal Computer,Assembler,2.8125,True,Computer,Circuit Board,2.666666666666667
+Caterium Computer,Manufacturer,3.75,True,Computer,Circuit Board,7.0
+Concrete,Constructor,15.0,False,,Limestone,3.0
+Rubber Concrete,Assembler,45.0,True,Concrete,Limestone,1.1111111111111112
+Fine Concrete,Assembler,25.0,True,Concrete,Silica,0.3
+Copper Ingot,Smelter,30.0,False,,Copper Ore,1.0
+Copper Alloy Ingot,Foundry,100.0,True,Copper Ingot,Copper Ore,0.5
+Copper Powder,Constructor,50.0,False,,Copper Ingot,6.0
+Copper Sheet,Constructor,10.0,False,,Copper Ingot,2.0
+Crystal Oscillator,Manufacturer,1.0,False,,Quartz Crystal,18.0
+Insulated Crystal Oscillator,Manufacturer,1.875,True,Crystal Oscillator,Quartz Crystal,10.0
+Electromagnetic Control Rod,Assembler,4.0,False,,Stator,1.5
+Electromagnetic Connection Rod,Assembler,8.0,True,Electromagnetic Control Rod,Stator,1.0
+Empty Canister,Constructor,60.0,False,,Plastic,0.5
+Unpackage Water,Packager,120.0,False,,Packaged Water,1.0
+Unpackage Fuel,Packager,60.0,False,,Packaged Fuel,1.0
+Unpackage Liquid Biofuel,Packager,60.0,False,,Packaged Liquid Biofuel,1.0
+Unpackage Turbofuel,Packager,20.0,False,,Packaged Turbofuel,1.0
+Unpackage Oil,Packager,60.0,False,,Packaged Oil,1.0
+Unpackage Heavy Oil Residue,Packager,20.0,False,,Packaged Heavy Oil Residue,1.0
+Unpackage Alumina Solution,Packager,120.0,False,,Packaged Alumina Solution,1.0
+Unpackage Sulfuric Acid,Packager,60.0,False,,Packaged Sulfuric Acid,1.0
+Steel Canister,Constructor,40.0,True,Empty Canister,Steel Ingot,1.5
+Coated Iron Canister,Assembler,60.0,True,Empty Canister,Iron Plate,0.5
+Empty Fluid Tank,Constructor,60.0,False,,Aluminum Ingot,1.0
+Unpackage Nitrogen Gas,Packager,60.0,False,,Packaged Nitrogen Gas,1.0
+Unpackage Nitric Acid,Packager,20.0,False,,Packaged Nitric Acid,1.0
+Encased Industrial Beam,Assembler,6.0,False,,Steel Beam,4.0
+Encased Industrial Pipe,Assembler,4.0,True,Encased Industrial Beam,Steel Pipe,7.0
+Encased Plutonium Cell,Assembler,5.0,False,,Plutonium Pellet,2.0
+Instant Plutonium Cell,Particle Accelerator,10.0,True,Encased Plutonium Cell,Non-fissile Uranium,7.5
+Infused Uranium Cell,Manufacturer,20.0,True,Encased Uranium Cell,Uranium,1.25
+Fabric,Assembler,15.0,False,,Mycelia,1.0
+Heat Sink,Assembler,7.5,False,,Alclad Aluminum Sheet,5.0
+Heat Exchanger,Assembler,10.0,True,Heat Sink,Aluminum Casing,3.0
+Heavy Modular Frame,Manufacturer,2.0,False,,Modular Frame,5.0
+Heavy Flexible Frame,Manufacturer,3.75,True,Heavy Modular Frame,Modular Frame,5.0
+Heavy Encased Frame,Manufacturer,2.8125,True,Heavy Modular Frame,Modular Frame,2.666666666666667
+High-Speed Connector,Manufacturer,3.75,False,,Quickwire,56.0
+Silicon High-Speed Connector,Manufacturer,3.0,True,,Quickwire,30.0
+Iron Ingot,Smelter,30.0,False,,Iron Ore,1.0
+Iron Alloy Ingot,Foundry,50.0,True,Iron Ingot,Iron Ore,0.4
+Iron Plate,Constructor,20.0,False,,Iron Ingot,1.5
+Coated Iron Plate,Assembler,75.0,True,Iron Plate,Iron Ingot,0.6666666666666667
+Steel Coated Plate,Assembler,45.0,True,Iron Plate,Steel Ingot,0.1666666666666666
+Iron Rod,Constructor,15.0,False,,Iron Ingot,1.0
+Steel Rod,Constructor,48.0,True,Iron Rod,Steel Ingot,0.25
+Modular Engine,Manufacturer,1.0,False,,Motor,2.0
+Modular Frame,Assembler,2.0,False,,Reinforced Iron Plate,1.5
+Bolted Frame,Assembler,5.0,True,Modular Frame,Reinforced Iron Plate,1.5
+Steeled Frame,Assembler,3.0,True,Modular Frame,Reinforced Iron Plate,0.6666666666666666
+Motor,Assembler,5.0,False,,Rotor,2.0
+Rigour Motor,Manufacturer,7.5,True,Motor,Rotor,0.5
+Electric Motor,Assembler,7.5,True,Motor,Electromagnetic Control Rod,0.5
+Nuclear Pasta,Particle Accelerator,0.5,False,,Copper Powder,200.0
+Packaged Alumina Solution,Packager,120.0,False,,Alumina Solution,1.0
+Packaged Fuel,Packager,40.0,False,,Fuel,1.0
+Packaged Heavy Oil Residue,Packager,30.0,False,,Heavy Oil Residue,1.0
+Packaged Liquid Biofuel,Packager,40.0,False,,Liquid Biofuel,1.0
+Packaged Nitric Acid,Packager,30.0,False,,Nitric Acid,1.0
+Packaged Nitrogen Gas,Packager,60.0,False,,Nitrogen Gas,4.0
+Packaged Oil,Packager,30.0,False,,Crude Oil,1.0
+Packaged Sulfuric Acid,Packager,40.0,False,,Sulfuric Acid,1.0
+Packaged Turbofuel,Packager,20.0,False,,Turbofuel,1.0
+Packaged Water,Packager,60.0,False,,Water,1.0
+Plutonium Fuel Rod,Manufacturer,0.25,False,,Encased Plutonium Cell,30.0
+Plutonium Fuel Unit,Assembler,0.5,True,Plutonium Fuel Rod,Encased Plutonium Cell,20.0
+Plutonium Pellet,Particle Accelerator,30.0,False,,Non-fissile Uranium,3.333333333333333
+Plutonium Waste,Nuclear Power Plant,1.0,False,,Plutonium Fuel Rod,0.1
+Pressure Conversion Cube,Assembler,1.0,False,,Fused Modular Frame,1.0
+Quartz Crystal,Constructor,22.5,False,,Raw Quartz,1.6666666666666667
+Quickwire,Constructor,60.0,False,,Caterium Ingot,0.2
+Fused Quickwire,Assembler,90.0,True,Quickwire,Caterium Ingot,0.0833333333333333
+Radio Control Unit,Manufacturer,2.5,False,,Aluminum Casing,16.0
+Radio Control System,Manufacturer,4.5,True,Radio Control Unit,Crystal Oscillator,0.3333333333333333
+Radio Connection Unit,Manufacturer,3.75,True,Radio Control Unit,Heat Sink,4.0
+Reinforced Iron Plate,Assembler,5.0,False,,Iron Plate,6.0
+Adhered Iron Plate,Assembler,3.75,True,Reinforced Iron Plate,Iron Plate,3.0
+Bolted Iron Plate,Assembler,15.0,True,Reinforced Iron Plate,Iron Plate,6.0
+Stitched Iron Plate,Assembler,5.625,True,Reinforced Iron Plate,Iron Plate,3.333333333333333
+Rotor,Assembler,4.0,False,,Iron Rod,5.0
+Copper Rotor,Assembler,11.25,True,Rotor,Copper Sheet,2.0
+Steel Rotor,Assembler,5.0,True,Rotor,Steel Pipe,2.0
+Screw,Constructor,40.0,False,,Iron Rod,0.25
+Cast Screw,Constructor,50.0,True,Screw,Iron Ingot,0.25
+Steel Screw,Constructor,260.0,True,Screw,Steel Beam,0.0192307692307692
+Silica,Constructor,37.5,False,,Raw Quartz,0.6000000000000001
+Cheap Silica,Assembler,26.25,True,Silica,Raw Quartz,0.4285714285714286
+Smart Plating,Assembler,2.0,False,,Reinforced Iron Plate,1.0
+Plastic Smart Plating,Manufacturer,5.0,True,Smart Plating,Reinforced Iron Plate,0.5
+Stator,Assembler,5.0,False,,Steel Pipe,3.0
+Quickwire Stator,Assembler,8.0,True,Stator,Steel Pipe,2.0
+Steel Beam,Constructor,15.0,False,,Steel Ingot,4.0
+Steel Ingot,Foundry,45.0,False,,Iron Ore,1.0
+Coke Steel Ingot,Foundry,100.0,True,Steel Ingot,Iron Ore,0.75
+Compacted Steel Ingot,Foundry,37.5,True,Steel Ingot,Iron Ore,0.6000000000000001
+Solid Steel Ingot,Foundry,60.0,True,Steel Ingot,Iron Ingot,0.6666666666666666
+Steel Pipe,Constructor,20.0,False,,Steel Ingot,1.5
+Supercomputer,Manufacturer,1.875,False,,Computer,2.0
+OC Supercomputer,Assembler,3.0,True,Supercomputer,Radio Control Unit,3.0
+Super-State Computer,Manufacturer,2.4,True,Supercomputer,Computer,1.5
+Turbo Motor,Manufacturer,1.875,False,,Cooling System,4.0
+Turbo Electric Motor,Manufacturer,2.8125,True,Turbo Motor,Motor,2.333333333333333
+Turbo Pressure Motor,Manufacturer,3.75,True,Turbo Motor,Motor,2.0
+Uranium Fuel Rod,Manufacturer,0.4,False,,Encased Uranium Cell,50.0
+Uranium Fuel Unit,Manufacturer,0.6,True,Uranium Fuel Rod,Encased Uranium Cell,33.333333333333336
+Uranium Waste,Nuclear Power Plant,10.0,False,,Uranium Fuel Rod,0.02
+Versatile Framework,Assembler,5.0,False,,Modular Frame,0.5
+Flexible Framework,Manufacturer,7.5,True,Versatile Framework,Modular Frame,0.5
+Wire,Constructor,30.0,False,,Copper Ingot,0.5
+Fused Wire,Assembler,90.0,True,Wire,Copper Ingot,0.1333333333333333
+Iron Wire,Constructor,22.5,True,Wire,Iron Ingot,0.5555555555555556
+Caterium Wire,Constructor,120.0,True,Wire,Caterium Ingot,0.125
+Adaptive Control Unit,Manufacturer,1.0,False,,Circuit Board,5.0
+AI Limiter,Assembler,5.0,False,,Quickwire,20.0
+Alclad Aluminum Sheet,Assembler,30.0,False,,Copper Ingot,0.3333333333333333
+Alclad Casing,Assembler,112.5,True,Aluminum Casing,Copper Ingot,0.6666666666666666
+Aluminum Ingot,Foundry,60.0,False,,Silica,1.25
+Assembly Director System,Assembler,0.75,False,,Supercomputer,1.0
+Automated Wiring,Assembler,2.5,False,,Cable,20.0
+Automated Speed Wiring,Manufacturer,7.5,True,Automated Wiring,Wire,10.0
+Classic Battery,Manufacturer,30.0,True,Battery,Alclad Aluminum Sheet,1.75
+Black Powder,Assembler,7.5,False,,Sulfur,2.0
+Fine Black Powder,Assembler,15.0,True,Black Powder,Compacted Coal,0.25
+Insulated Cable,Assembler,100.0,True,Cable,Rubber,0.3
+Quickwire Cable,Assembler,27.5,True,Cable,Rubber,0.1818181818181818
+Circuit Board,Assembler,7.5,False,,Plastic,4.0
+Electrode Circuit Board,Assembler,5.0,True,Circuit Board,Petroleum Coke,9.0
+Silicon Circuit Board,Assembler,12.5,True,Circuit Board,Silica,2.2
+Caterium Circuit Board,Assembler,8.75,True,Circuit Board,Quickwire,4.285714285714286
+Computer,Manufacturer,2.5,False,,Cable,9.0
+Crystal Computer,Assembler,2.8125,True,Computer,Crystal Oscillator,1.0
+Caterium Computer,Manufacturer,3.75,True,Computer,Quickwire,28.0
+Rubber Concrete,Assembler,45.0,True,Concrete,Rubber,0.2222222222222222
+Fine Concrete,Assembler,25.0,True,Concrete,Limestone,1.2
+Copper Alloy Ingot,Foundry,100.0,True,Copper Ingot,Iron Ore,0.25
+Crystal Oscillator,Manufacturer,1.0,False,,Cable,14.0
+Insulated Crystal Oscillator,Manufacturer,1.875,True,Crystal Oscillator,Rubber,7.0
+Electromagnetic Control Rod,Assembler,4.0,False,,AI Limiter,1.0
+Electromagnetic Connection Rod,Assembler,8.0,True,Electromagnetic Control Rod,High-Speed Connector,0.5
+Unpackage Water,Packager,120.0,False,,Packager,
+Unpackage Fuel,Packager,60.0,False,,Packager,
+Unpackage Liquid Biofuel,Packager,60.0,False,,Packager,
+Unpackage Turbofuel,Packager,20.0,False,,Packager,
+Unpackage Oil,Packager,60.0,False,,Packager,
+Unpackage Heavy Oil Residue,Packager,20.0,False,,Packager,
+Unpackage Alumina Solution,Packager,120.0,False,,Packager,
+Unpackage Sulfuric Acid,Packager,60.0,False,,Packager,
+Coated Iron Canister,Assembler,60.0,True,Empty Canister,Copper Sheet,0.25
+Unpackage Nitrogen Gas,Packager,60.0,False,,Packager,
+Unpackage Nitric Acid,Packager,20.0,False,,Packager,
+Encased Industrial Beam,Assembler,6.0,False,,Concrete,5.0
+Encased Industrial Pipe,Assembler,4.0,True,Encased Industrial Beam,Concrete,5.0
+Encased Plutonium Cell,Assembler,5.0,False,,Concrete,4.0
+Instant Plutonium Cell,Particle Accelerator,10.0,True,Encased Plutonium Cell,Aluminum Casing,1.0
+Infused Uranium Cell,Manufacturer,20.0,True,Encased Uranium Cell,Silica,0.75
+Fabric,Assembler,15.0,False,,Biomass,5.0
+Heat Sink,Assembler,7.5,False,,Copper Sheet,3.0
+Heat Exchanger,Assembler,10.0,True,Heat Sink,Rubber,3.0
+Heavy Modular Frame,Manufacturer,2.0,False,,Steel Pipe,15.0
+Heavy Flexible Frame,Manufacturer,3.75,True,Heavy Modular Frame,Encased Industrial Beam,3.0
+Heavy Encased Frame,Manufacturer,2.8125,True,Heavy Modular Frame,Encased Industrial Beam,3.333333333333333
+High-Speed Connector,Manufacturer,3.75,False,,Cable,10.0
+Silicon High-Speed Connector,Manufacturer,3.0,True,,Silica,12.5
+Iron Alloy Ingot,Foundry,50.0,True,Iron Ingot,Copper Ore,0.4
+Coated Iron Plate,Assembler,75.0,True,Iron Plate,Plastic,0.1333333333333333
+Steel Coated Plate,Assembler,45.0,True,Iron Plate,Plastic,0.1111111111111111
+Modular Engine,Manufacturer,1.0,False,,Rubber,15.0
+Modular Frame,Assembler,2.0,False,,Iron Rod,6.0
+Bolted Frame,Assembler,5.0,True,Modular Frame,Screw,28.0
+Steeled Frame,Assembler,3.0,True,Modular Frame,Steel Pipe,3.333333333333333
+Motor,Assembler,5.0,False,,Stator,2.0
+Rigour Motor,Manufacturer,7.5,True,Motor,Stator,0.5
+Electric Motor,Assembler,7.5,True,Motor,Rotor,1.0
+Nuclear Pasta,Particle Accelerator,0.5,False,,Pressure Conversion Cube,1.0
+Packaged Alumina Solution,Packager,120.0,False,,Empty Canister,1.0
+Packaged Fuel,Packager,40.0,False,,Empty Canister,1.0
+Packaged Heavy Oil Residue,Packager,30.0,False,,Empty Canister,1.0
+Packaged Liquid Biofuel,Packager,40.0,False,,Empty Canister,1.0
+Packaged Nitric Acid,Packager,30.0,False,,Empty Fluid Tank,1.0
+Packaged Nitrogen Gas,Packager,60.0,False,,Empty Fluid Tank,1.0
+Packaged Oil,Packager,30.0,False,,Empty Canister,1.0
+Packaged Sulfuric Acid,Packager,40.0,False,,Empty Canister,1.0
+Packaged Turbofuel,Packager,20.0,False,,Empty Canister,1.0
+Packaged Water,Packager,60.0,False,,Empty Canister,1.0
+Plutonium Fuel Rod,Manufacturer,0.25,False,,Steel Beam,18.0
+Plutonium Fuel Unit,Assembler,0.5,True,Plutonium Fuel Rod,Pressure Conversion Cube,1.0
+Plutonium Pellet,Particle Accelerator,30.0,False,,Uranium Waste,0.8333333333333334
+Plutonium Waste,Nuclear Power Plant,1.0,False,,Water,300.0
+Pressure Conversion Cube,Assembler,1.0,False,,Radio Control Unit,2.0
+Fused Quickwire,Assembler,90.0,True,Quickwire,Copper Ingot,0.4166666666666667
+Radio Control Unit,Manufacturer,2.5,False,,Crystal Oscillator,0.5
+Radio Control System,Manufacturer,4.5,True,Radio Control Unit,Circuit Board,3.333333333333333
+Radio Connection Unit,Manufacturer,3.75,True,Radio Control Unit,High-Speed Connector,2.0
+Reinforced Iron Plate,Assembler,5.0,False,,Screw,12.0
+Adhered Iron Plate,Assembler,3.75,True,Reinforced Iron Plate,Rubber,1.0
+Bolted Iron Plate,Assembler,15.0,True,Reinforced Iron Plate,Screw,16.666666666666668
+Stitched Iron Plate,Assembler,5.625,True,Reinforced Iron Plate,Wire,6.666666666666667
+Rotor,Assembler,4.0,False,,Screw,25.0
+Copper Rotor,Assembler,11.25,True,Rotor,Screw,17.333333333333336
+Steel Rotor,Assembler,5.0,True,Rotor,Wire,6.0
+Cheap Silica,Assembler,26.25,True,Silica,Limestone,0.7142857142857143
+Smart Plating,Assembler,2.0,False,,Rotor,1.0
+Plastic Smart Plating,Manufacturer,5.0,True,Smart Plating,Rotor,0.5
+Stator,Assembler,5.0,False,,Wire,8.0
+Quickwire Stator,Assembler,8.0,True,Stator,Quickwire,7.5
+Steel Ingot,Foundry,45.0,False,,Coal,1.0
+Coke Steel Ingot,Foundry,100.0,True,Steel Ingot,Petroleum Coke,0.75
+Compacted Steel Ingot,Foundry,37.5,True,Steel Ingot,Compacted Coal,0.3
+Solid Steel Ingot,Foundry,60.0,True,Steel Ingot,Coal,0.6666666666666666
+Supercomputer,Manufacturer,1.875,False,,AI Limiter,2.0
+OC Supercomputer,Assembler,3.0,True,Supercomputer,Cooling System,3.0
+Super-State Computer,Manufacturer,2.4,True,Supercomputer,Electromagnetic Control Rod,1.0
+Turbo Motor,Manufacturer,1.875,False,,Radio Control Unit,2.0
+Turbo Electric Motor,Manufacturer,2.8125,True,Turbo Motor,Radio Control Unit,3.0
+Turbo Pressure Motor,Manufacturer,3.75,True,Turbo Motor,Pressure Conversion Cube,0.5
+Uranium Fuel Rod,Manufacturer,0.4,False,,Encased Industrial Beam,3.0
+Uranium Fuel Unit,Manufacturer,0.6,True,Uranium Fuel Rod,Electromagnetic Control Rod,3.333333333333333
+Uranium Waste,Nuclear Power Plant,10.0,False,,Water,30.0
+Versatile Framework,Assembler,5.0,False,,Steel Beam,6.0
+Flexible Framework,Manufacturer,7.5,True,Versatile Framework,Steel Beam,3.0
+Fused Wire,Assembler,90.0,True,Wire,Caterium Ingot,0.0333333333333333
+Adaptive Control Unit,Manufacturer,1.0,False,,Heavy Modular Frame,1.0
+Automated Speed Wiring,Manufacturer,7.5,True,Automated Wiring,High-Speed Connector,0.25
+Classic Battery,Manufacturer,30.0,True,Battery,Plastic,2.0
+Computer,Manufacturer,2.5,False,,Plastic,18.0
+Caterium Computer,Manufacturer,3.75,True,Computer,Rubber,12.0
+Crystal Oscillator,Manufacturer,1.0,False,,Reinforced Iron Plate,2.5
+Insulated Crystal Oscillator,Manufacturer,1.875,True,Crystal Oscillator,AI Limiter,1.0
+Infused Uranium Cell,Manufacturer,20.0,True,Encased Uranium Cell,Sulfur,1.25
+Heavy Modular Frame,Manufacturer,2.0,False,,Encased Industrial Beam,5.0
+Heavy Flexible Frame,Manufacturer,3.75,True,Heavy Modular Frame,Rubber,20.0
+Heavy Encased Frame,Manufacturer,2.8125,True,Heavy Modular Frame,Steel Pipe,12.0
+High-Speed Connector,Manufacturer,3.75,False,,Circuit Board,1.0
+Silicon High-Speed Connector,Manufacturer,3.0,True,,Circuit Board,1.0
+Modular Engine,Manufacturer,1.0,False,,Smart Plating,2.0
+Rigour Motor,Manufacturer,7.5,True,Motor,Crystal Oscillator,0.1666666666666666
+Plutonium Fuel Rod,Manufacturer,0.25,False,,Electromagnetic Control Rod,6.0
+Radio Control Unit,Manufacturer,2.5,False,,Computer,0.5
+Radio Control System,Manufacturer,4.5,True,Radio Control Unit,Aluminum Casing,20.0
+Radio Connection Unit,Manufacturer,3.75,True,Radio Control Unit,Quartz Crystal,12.0
+Plastic Smart Plating,Manufacturer,5.0,True,Smart Plating,Plastic,1.5
+Supercomputer,Manufacturer,1.875,False,,High-Speed Connector,3.0
+Super-State Computer,Manufacturer,2.4,True,Supercomputer,Battery,10.0
+Turbo Motor,Manufacturer,1.875,False,,Motor,4.0
+Turbo Electric Motor,Manufacturer,2.8125,True,Turbo Motor,Electromagnetic Control Rod,1.6666666666666667
+Turbo Pressure Motor,Manufacturer,3.75,True,Turbo Motor,Packaged Nitrogen Gas,12.0
+Uranium Fuel Rod,Manufacturer,0.4,False,,Electromagnetic Control Rod,5.0
+Uranium Fuel Unit,Manufacturer,0.6,True,Uranium Fuel Rod,Crystal Oscillator,1.0
+Flexible Framework,Manufacturer,7.5,True,Versatile Framework,Rubber,4.0
+Adaptive Control Unit,Manufacturer,1.0,False,,Computer,1.0
+Classic Battery,Manufacturer,30.0,True,Battery,Wire,3.0
+Computer,Manufacturer,2.5,False,,Screw,52.0
+Infused Uranium Cell,Manufacturer,20.0,True,Encased Uranium Cell,Quickwire,3.75
+Heavy Modular Frame,Manufacturer,2.0,False,,Screw,100.0
+Heavy Flexible Frame,Manufacturer,3.75,True,Heavy Modular Frame,Screw,104.0
+Heavy Encased Frame,Manufacturer,2.8125,True,Heavy Modular Frame,Concrete,7.333333333333334
+Plutonium Fuel Rod,Manufacturer,0.25,False,,Heat Sink,10.0
+Radio Control System,Manufacturer,4.5,True,Radio Control Unit,Rubber,10.0
+Supercomputer,Manufacturer,1.875,False,,Plastic,28.0
+Super-State Computer,Manufacturer,2.4,True,Supercomputer,Wire,22.5
+Turbo Motor,Manufacturer,1.875,False,,Rubber,24.0
+Turbo Electric Motor,Manufacturer,2.8125,True,Turbo Motor,Rotor,2.333333333333333
+Turbo Pressure Motor,Manufacturer,3.75,True,Turbo Motor,Stator,4.0
+Uranium Fuel Unit,Manufacturer,0.6,True,Uranium Fuel Rod,Beacon,2.0
