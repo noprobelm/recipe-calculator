@@ -90,9 +90,10 @@ if __name__ == '__main__':
 
     nodes = Columns([node for node in graph.nodes], equal=True, expand=True)
     console.print(nodes, style='indian_red')
+    # TODO: Add error handling for invalid recipe inputs
     recipe = Prompt.ask("Enter one of a valid recipe from list above").title()
     num_output = float(Prompt.ask("Input number of desired recipe to output (default=1)"))
 
     ingredients = get_ingredients(graph=graph, recipe=recipe, num_output=num_output)
-    console.print(f"Ingredient list to produce {num_output} of [indian_red]{recipe.lower()}[/indian_red]:")
+    console.print(f"Ingredient list to produce {num_output} of [indian_red]{recipe}[/indian_red]:")
     pprint(ingredients)
